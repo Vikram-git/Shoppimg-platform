@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #0f1419;
+  --color-ink-muted: #5c6670;
+  --color-paper: #faf8f5;
+  --color-cream: #f0ebe3;
+  --color-accent: #c45c26;
+  --color-accent-hover: #a34d20;
+  --color-forest: #1e3a2f;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply m-0 bg-paper text-ink font-sans text-[15px] leading-relaxed;
+  }
+}
