@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="refresh" content="0; url=/Shoppimg-platform/" />
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #111827;
+        background: #f3f4f6;
+      }
+      .box {
+        text-align: center;
+        padding: 1.5rem 2rem;
+        background: white;
+        border-radius: 0.75rem;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+      }
+      .small {
+        font-size: 0.875rem;
+        color: #6b7280;
+      }
+    </style>
+    <script>
+      // If meta refresh is blocked, do a JS redirect as a fallback.
+      (function () {
+        var target = '/Shoppimg-platform/';
+        if (location.pathname !== target) {
+          location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Loading Arcadia…</h1>
+      <p class="small">If you are not redirected automatically, <a href="/Shoppimg-platform/">click here</a>.</p>
+    </div>
+  </body>
+</html>
+
